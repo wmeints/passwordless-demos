@@ -24,7 +24,7 @@ public class RegisterPageModel : PageModel
         public string Email { get; set; } = "";
     }
 
-    public async Task<IActionResult> OnPostAsync(string returnUrl = null)
+    public async Task<IActionResult> OnPostAsync(string? returnUrl = null)
     {
         returnUrl ??= Url.Content("~/");
 
